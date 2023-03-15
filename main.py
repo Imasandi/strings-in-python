@@ -1,36 +1,74 @@
-#string
-# insert a new line in the same string
-print("male \nman")
+# numbers
+# common data types in python
+# basics of using numbers
+# different types of numbers
+# functions that can be using in python
 
-#quotation mark with back slash,escape
-print("male\"man")
+#import math function
+from math import *
 
-#string variable
-"""variable name is phrase in here """
-phrase="male man"
-print(phrase+ " is cool")  #type the name of the variable inside the paranthesis
-# or concatnation
+print(2.0345)
+print(2)
+print(-3.5435)
 
-print(phrase)
+# basic arithmetics
+print(3.45 + 3)
+print(3*5)
+print(2-3)
+print(6/3)
 
-#function
-""" little block of code that we can run, performs a specific operation"""
-# when using a function in a string
-# modify string
-# get information about the string
-print(phrase.upper())  # function
-print(phrase.lower())
-print(phrase.isupper())
-print(phrase.upper().isupper())  # can run functions one after the other
-print(len(phrase))  # length of the string
-# individual characters of a string
-print(phrase[0])  # 1st letter
+# parenthesis
+print(3*5+4)
+print(3*(5+4))
 
-"""index function"""
-# tell us where a specific character located in our string
-print(phrase.index("m"))  # reverse of the previous function
-# passing a parameter
-print(phrase.index("man"))
+# moules
+print(10 % 3)  # gives the remainder of the division
 
-"""replace function """
-print(phrase.replace("male","elephant"))
+# store the numbers inside of variables
+my_num = -5
+print(my_num)
+
+#convert number into a string
+print(str(my_num))
+print(str(my_num ) + " is my favourite number")  # need to have "str" infront in order to type the number and string together
+
+
+# print(my_num + "is my favourite number") ---- this function gives an error
+
+#abs -- absolute value of a number
+print(abs(my_num))
+
+# pow -- power of the number --4 to the power 3
+print(pow(4,3))
+
+
+# max function -- return the larger  number
+print(max(3,8)) # shows which number is higher
+
+# min -- opposite-- return small value
+print(min(2, 9))
+
+# round  --- round a number
+
+# converting a number function to a string
+# using string inside a number function by converting it into a string
+# using a variable inside a number function
+
+
+round_num = 3.6
+print(round(round_num))
+
+print(str(round(round_num))+" is the rounded value ", round_num)
+
+# ceil function --- round the number in the largest decimal
+print(ceil(3.1))  # round the number to the largest decimal no matter what decimal is there
+
+
+# floor method --- grab the lowest number
+print(floor(3.7)) # cut off the decimal number
+
+# squire root function
+print(sqrt(36))
+
+
+
